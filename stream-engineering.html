@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08111f">
+  <meta name="description" content="مسار علمي هندسية في المكتبة الرقمية لمدرسة الجديدة النموذجية بنين: الكتب والمراجع وأوراق العمل والامتحانات المتاحة.">
+  <title>مسار علمي هندسية | مدرسة الجديدة النموذجية بنين</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="stream" data-stream="engineering">
+  <a class="skip-link" href="#subjects-container">تجاوز إلى المواد</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="main-header" id="top">
+    <div class="container header-container">
+      <a class="brand" href="index.html" aria-label="العودة إلى الرئيسية">
+        <span class="school-emblem brand-emblem">
+          <img src="logo.png" alt="" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+          <span class="emblem-fallback" hidden>ج</span>
+        </span>
+        <span class="brand-text">
+          <strong>مدرسة الجديدة النموذجية بنين</strong>
+          <small>المكتبة الرقمية للشهادة السودانية</small>
+        </span>
+      </a>
+      <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="main-nav"><i class="fa-solid fa-bars"></i></button>
+      <nav class="main-nav" id="main-nav" aria-label="التنقل الرئيسي">
+        <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i><span>الرئيسية</span></a>
+        <a href="index.html#streams" class="nav-link active"><i class="fa-solid fa-graduation-cap"></i><span>المسارات الأكاديمية</span></a>
+        <a href="index.html#library-search" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i><span>البحث</span></a>
+        <a href="index.html#planner" class="nav-link"><i class="fa-solid fa-list-check"></i><span>منظم المذاكرة</span></a>
+      </nav>
+      <button class="icon-button theme-toggle" id="theme-toggle" type="button" aria-label="تبديل المظهر" title="تبديل المظهر"><i class="fa-solid fa-sun"></i></button>
+    </div>
+  </header>
+
+  <main class="container stream-page-main" id="main-content">
+    <nav class="breadcrumbs" aria-label="مسار التنقل">
+      <a href="index.html"><i class="fa-solid fa-house"></i> الرئيسية</a><i class="fa-solid fa-chevron-left"></i><a href="index.html#streams">المسارات الأكاديمية</a><i class="fa-solid fa-chevron-left"></i><span>مسار علمي هندسية</span>
+    </nav>
+
+    <section class="stream-hero reveal">
+      <div class="stream-hero-copy">
+        <span class="badge"><i class="fa-solid fa-layer-group"></i> مكتبة المسار</span>
+        <h1 id="stream-page-title">مسار علمي هندسية</h1>
+        <p id="stream-page-description">الرياضيات المتخصصة والفيزياء والكيمياء والمواد المساندة.</p>
+      </div>
+      <div class="stream-hero-icon" id="stream-page-icon" aria-hidden="true"><i class="fa-solid fa-calculator"></i></div>
+    </section>
+
+    <section class="stream-stats" aria-label="ملخص المسار">
+      <div class="stream-stat"><i class="fa-solid fa-book-open"></i><div><strong id="stream-subject-count">٠</strong><span>مادة منظمة</span></div></div>
+      <div class="stream-stat"><i class="fa-solid fa-folder-open"></i><div><strong id="stream-resource-count">٠</strong><span>ملف متاح</span></div></div>
+      <div class="stream-stat"><i class="fa-solid fa-book-bookmark"></i><div><strong id="stream-book-count">٠</strong><span>كتاب ومرجع</span></div></div>
+    </section>
+
+    <section class="resources-area" aria-labelledby="resources-title">
+      <div class="resource-toolbar">
+        <div><span class="section-overline">مصادر التعلّم</span><h2 id="resources-title">المواد والملفات الدراسية</h2><p>افتح المادة للاطلاع على الأقسام المتاحة، وستظهر روابط الملفات بعد إضافتها إلى بيانات الموقع.</p></div>
+        <label class="subject-search" for="subject-search-input"><i class="fa-solid fa-magnifying-glass"></i><input id="subject-search-input" type="search" placeholder="ابحث عن مادة..." autocomplete="off"></label>
+      </div>
+      <div class="resource-filter-row" role="group" aria-label="تصفية أقسام الموارد">
+        <button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">كل الأقسام</button>
+        <button type="button" class="filter-chip" data-filter="books" aria-pressed="false"><i class="fa-solid fa-book"></i> الكتب والمراجع</button>
+        <button type="button" class="filter-chip" data-filter="worksheets" aria-pressed="false"><i class="fa-solid fa-file-lines"></i> أوراق العمل والملخصات</button>
+        <button type="button" class="filter-chip" data-filter="exams" aria-pressed="false"><i class="fa-solid fa-file-pen"></i> الامتحانات السابقة</button>
+      </div>
+      <div id="subjects-container" class="subjects-grid" aria-live="polite">
+        <div class="no-data"><i class="fa-solid fa-spinner fa-spin"></i><h3>جارٍ تجهيز مواد المسار</h3><p>تُعرض المواد والملفات تلقائيًا من بيانات المكتبة.</p></div>
+      </div>
+    </section>
+
+    <a class="stream-back-link" href="index.html#streams"><i class="fa-solid fa-arrow-right"></i> العودة إلى جميع المسارات</a>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container footer-main">
+      <a class="footer-brand" href="index.html"><span class="footer-emblem"><i class="fa-solid fa-graduation-cap"></i></span><span><strong>مدرسة الجديدة النموذجية بنين</strong><small>المكتبة الرقمية للشهادة السودانية</small></span></a>
+      <div class="footer-links"><a href="index.html#streams">المسارات</a><a href="index.html#library-search">البحث</a><a href="index.html#planner">منظم المذاكرة</a></div>
+      <a href="#top" class="back-top" aria-label="العودة للأعلى"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <div class="container footer-bottom"><p>جميع الحقوق محفوظة © <span id="year"></span> <strong>مدرسة الجديدة النموذجية بنين</strong></p><span>صُمّمت لتسهيل الوصول إلى المعرفة.</span></div>
+  </footer>
+  <button class="back-to-top-floating" id="back-to-top" type="button" aria-label="العودة إلى الأعلى"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
